@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Config for Roboto -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="bg-white font-sans">
+
+    <!-- Top Navbar -->
+    <div class="flex items-center justify-between px-6 py-4 border-b border-gray-200">
+        <!-- Logo -->
+        <div class="text-2xl font-bold text-black">
+            LOGO
+        </div>
+
+        <!-- Search Bar -->
+        <div class="flex w-full max-w-xl mx-6 rounded-full overflow-hidden border border-gray-300">
+            <input type="text" placeholder="Search" class="flex-grow px-4 py-2 focus:outline-none" />
+            <button class="bg-black text-white px-4 flex items-center justify-center">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Icons -->
+        <div class="flex items-center space-x-6">
+            <!-- User Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M5.121 17.804A4 4 0 0112 15a4 4 0 016.879 2.804M15 10a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+
+            <!-- Cart Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.5 6H18m-4-6V7H9v6h5z" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- Bottom Navbar -->
+    <div class="flex justify-center space-x-8 py-3 text-sm font-medium text-black">
+        <a href="#" class="border-b-2 border-black pb-1">Home</a>
+        <a href="#" class="hover:underline">Products</a>
+        <a href="#" class="hover:underline">Gift Card</a>
+        <a href="#" class="hover:underline">Advice & Reviews</a>
+        <a href="#" class="hover:underline">Help</a>
+    </div>
+
+    <!-- Hero / Photo Section -->
+    <div class="w-full h-[464px]">
+        <img src="https://images.unsplash.com/photo-1624396963238-df0e48367ff7?q=80&w=2036&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Demo Banner" class="w-full h-full object-cover" />
+    </div> 
+    <!-- <div class="w-[1440px] h-[464px] overflow-hidden mx-auto">
+        <img
+          src="https://images.unsplash.com/photo-1624396963238-df0e48367ff7?q=80&w=2036&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Demo Banner"
+          class="w-full h-full object-cover"
+        />
+      </div> -->
+
+
+      <!-- <div class="w-[1440px] h-[464px] p-[100px] gap-[10px] bg-[url('https://images.unsplash.com/photo-1624396963238-df0e48367ff7?q=80&w=2036&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center">
+    
+      </div> -->
+      
+
+    <!-- ======== Text Section Start ======== -->
+<!-- <div class="w-full h-[258px] pt-[100px] pr-[100px] pb-[50px] pl-[100px] flex justify-center items-center">
+    <p class="w-[1240px] h-[108px] font-roboto font-semibold text-[24px] leading-[36px] text-center">
+        A smart home is a residence that uses connected technology to automate and remotely manage various household functions—like lighting, climate control, security systems, and appliances—for improved convenience, energy efficiency, and comfort
+    </p>
+</div> -->
+<div class="w-full pt-[100px] pb-[50px] px-6 md:px-10 lg:px-[100px] flex justify-center items-center">
+  <p class="w-full max-w-[1240px] font-roboto font-semibold text-[18px] md:text-[20px] lg:text-[24px] leading-[28px] md:leading-[32px] lg:leading-[36px] text-center">
+    A smart home is a residence that uses connected technology to automate and remotely manage various household functions—like lighting, climate control, security systems, and appliances—for improved convenience, energy efficiency, and comfort
+  </p>
+</div>
+
+<!-- ======== Text Section End ======== -->
+<!-- ======== Tech Section Start ======== -->
+<div class="max-w-[1240px] mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[24px]">
+  
+  <!-- Item 1 -->
+  <div class="flex flex-col gap-[24px]">
+    <img src="https://t4.ftcdn.net/jpg/02/17/63/97/360_F_217639719_SxjxC4qyRoJQJdwmWtgQrvzTUX0SF3HY.jpg" alt="Tech 1" class="w-full h-[300px] object-cover rounded-lg" />
+    <h5 class="font-roboto font-semibold text-[20px]">Innovative AI Solutions</h5>
+    <p class="text-[16px] text-gray-600">We leverage cutting-edge AI to build scalable and intelligent systems.</p>
+  </div>
+
+  <!-- Item 2 -->
+  <div class="flex flex-col gap-[24px]">
+    <img src="https://t4.ftcdn.net/jpg/02/17/63/97/360_F_217639719_SxjxC4qyRoJQJdwmWtgQrvzTUX0SF3HY.jpg" alt="Tech 2" class="w-full h-[387px] object-cover rounded-lg" />
+    <h5 class="font-roboto font-semibold text-[20px]">Next-Gen Cloud</h5>
+    <p class="text-[16px] text-gray-600">Our cloud infrastructure supports global innovation with security and speed.</p>
+  </div>
+
+  <!-- Item 3 -->
+  <div class="flex flex-col gap-[24px]">
+    <img src="https://t4.ftcdn.net/jpg/02/17/63/97/360_F_217639719_SxjxC4qyRoJQJdwmWtgQrvzTUX0SF3HY.jpg" alt="Tech 3" class="w-full h-[300px] object-cover rounded-lg" />
+    <h5 class="font-roboto font-semibold text-[20px]">Smart IoT Devices</h5>
+    <p class="text-[16px] text-gray-600">Building the future with devices that connect, sense, and respond in real time.</p>
+  </div>
+
+</div>
+
+<!-- ======== Tech Section End ======== -->
+<div class="h-[100px]"></div>
+
+<!-- ======== Stats Section Start ======== -->
+<div class="w-full pt-[80px] pb-[80px] px-4 md:px-[100px] bg-[url('https://timelinecovers.pro/facebook-cover/download/grey-metallic-background-facebook-cover.jpg')] bg-cover bg-center">
+    <div class="max-w-[1240px] mx-auto flex flex-col items-center gap-[56px]">
+  
+      <!-- Title -->
+      <h4 class="font-roboto font-normal text-[28px] sm:text-[32px] leading-[40px] text-center text-white">
+        Today...
+      </h4>
+  
+      <!-- 3 Stats Blocks -->
+      <div class="flex flex-col items-center gap-[40px] sm:flex-row sm:justify-center sm:gap-[60px] lg:gap-[120px]">
+        
+        <!-- Stat Block 1 -->
+        <div class="w-[171px] flex flex-col items-center">
+          <p class="font-roboto font-normal text-[12px] leading-[20px] text-center text-white">Over</p>
+          <p class="font-roboto font-extrabold text-[64px] leading-[100%] text-center bg-gradient-to-b from-[#FFDD3C] to-[#FFFFB7] text-transparent bg-clip-text">
+            142k
+          </p>
+          <p class="font-roboto font-medium text-[16px] leading-[24px] text-center text-white">Products sold</p>
+        </div>
+  
+        <!-- Stat Block 2 -->
+        <div class="w-[171px] flex flex-col items-center">
+          <p class="font-roboto font-normal text-[12px] leading-[20px] text-center text-white">with</p>
+          <p class="font-roboto font-extrabold text-[64px] leading-[100%] text-center bg-gradient-to-b from-[#E78FFF] to-[#C900FF] text-transparent bg-clip-text">
+            95%
+          </p>
+          <p class="font-roboto font-medium text-[16px] leading-[24px] text-center text-white">Customer Satisfactions</p>
+        </div>
+  
+        <!-- Stat Block 3 -->
+        <div class="w-[171px] flex flex-col items-center">
+          <p class="font-roboto font-normal text-[12px] leading-[20px] text-center text-white">Selling</p>
+          <p class="font-roboto font-extrabold text-[64px] leading-[100%] text-center bg-gradient-to-b from-[#55D0FF] to-[#CCF9FF] text-transparent bg-clip-text">
+            12
+          </p>
+          <p class="font-roboto font-medium text-[16px] leading-[24px] text-center text-white">Territories</p>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  
+  <!-- ======== Stats Section End ======== -->
+
+    <!-- ======== Meet Our Team Section Start ======== -->
+    <div class="w-full px-6 py-20 md:px-16 lg:px-[100px] flex flex-col gap-12">
+
+        <!-- Section Heading -->
+        <h3 class="text-2xl md:text-4xl font-roboto font-semibold text-center">
+            Meet Our Team
+        </h3>
+
+        <!-- Team Grid -->
+        <div class="w-full flex justify-center">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+
+            <!-- Member Card -->
+            <div class="w-full max-w-[292px] flex flex-col items-center gap-[16px] mx-auto">
+                <img src="https://images.unsplash.com/photo-1601027847517-8037885147f2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Member 1" class="w-full h-auto rounded-[12px] object-cover" />
+                <h6 class="text-[20px] leading-[30px] font-roboto font-semibold text-center">Member 1</h6>
+                <p class="text-[12px] leading-[20px] font-roboto font-medium text-center">Role 1</p>
+            </div>
+
+            <!-- Repeat 7 more cards below with different image and name -->
+
+            <div class="w-full max-w-[292px] flex flex-col items-center gap-[16px] mx-auto">
+                <img src="https://images.unsplash.com/photo-1601027847517-8037885147f2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Member 2" class="w-full h-auto rounded-[12px] object-cover" />
+                <h6 class="text-[20px] leading-[30px] font-roboto font-semibold text-center">Member 2</h6>
+                <p class="text-[12px] leading-[20px] font-roboto font-medium text-center">Role 2</p>
+            </div>
+
+            <div class="w-full max-w-[292px] flex flex-col items-center gap-[16px] mx-auto">
+                <img src="https://images.unsplash.com/photo-1601027847517-8037885147f2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Member 3" class="w-full h-auto rounded-[12px] object-cover" />
+                <h6 class="text-[20px] leading-[30px] font-roboto font-semibold text-center">Member 3</h6>
+                <p class="text-[12px] leading-[20px] font-roboto font-medium text-center">Role 3</p>
+            </div>
+
+            <div class="w-full max-w-[292px] flex flex-col items-center gap-[16px] mx-auto">
+                <img src="https://images.unsplash.com/photo-1601027847517-8037885147f2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Member 4" class="w-full h-auto rounded-[12px] object-cover" />
+                <h6 class="text-[20px] leading-[30px] font-roboto font-semibold text-center">Member 4</h6>
+                <p class="text-[12px] leading-[20px] font-roboto font-medium text-center">Role 4</p>
+            </div>
+
+            <div class="w-full max-w-[292px] flex flex-col items-center gap-[16px] mx-auto">
+                <img src="https://images.unsplash.com/photo-1601027847517-8037885147f2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Member 5" class="w-full h-auto rounded-[12px] object-cover" />
+                <h6 class="text-[20px] leading-[30px] font-roboto font-semibold text-center">Member 5</h6>
+                <p class="text-[12px] leading-[20px] font-roboto font-medium text-center">Role 5</p>
+            </div>
+
+            <div class="w-full max-w-[292px] flex flex-col items-center gap-[16px] mx-auto">
+                <img src="https://images.unsplash.com/photo-1601027847517-8037885147f2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Member 6" class="w-full h-auto rounded-[12px] object-cover" />
+                <h6 class="text-[20px] leading-[30px] font-roboto font-semibold text-center">Member 6</h6>
+                <p class="text-[12px] leading-[20px] font-roboto font-medium text-center">Role 6</p>
+            </div>
+
+            <div class="w-full max-w-[292px] flex flex-col items-center gap-[16px] mx-auto">
+                <img src="https://images.unsplash.com/photo-1601027847517-8037885147f2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Member 7" class="w-full h-auto rounded-[12px] object-cover" />
+                <h6 class="text-[20px] leading-[30px] font-roboto font-semibold text-center">Member 7</h6>
+                <p class="text-[12px] leading-[20px] font-roboto font-medium text-center">Role 7</p>
+            </div>
+
+            <div class="w-full max-w-[292px] flex flex-col items-center gap-[16px] mx-auto">
+                <img src="https://images.unsplash.com/photo-1601027847517-8037885147f2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Member 8" class="w-full h-auto rounded-[12px] object-cover" />
+                <h6 class="text-[20px] leading-[30px] font-roboto font-semibold text-center">Member 8</h6>
+                <p class="text-[12px] leading-[20px] font-roboto font-medium text-center">Role 8</p>
+            </div>
+
+            </div>
+        </div>
+
+</div>
+<!-- ======== Meet Our Team Section End ======== -->
+<div class="text-center flex flex-col justify-start">
+  <h2 class="text-2xl md:text-4xl font-bold max-w-2xl mx-auto ">
+    Success Stories from Our Community
+  </h2>
+  <p class="text-gray-500 max-w-[600px]  text-start text-sm mt-2 max-w-2xl mx-auto" >
+    Customer Experiences You Can Trust. Authentic feedback from those who’ve made the choice to work with us.
+  
+</div>
+
+<div class="bg-white py-12 px-[16px] md:px-[100px]">
+  <!-- Heading -->
+  <!-- <div class="text-center mb-12">
+      <h2 class="text-2xl md:text-4xl font-bold">Success Stories from Our Community</h2>
+      <p class="text-justify text-gray-500 text-sm mt-2">Customer Experiences You Can Trust. Authentic feedback
+          from those
+          who’ve made the choice to work with us.</p>
+  </div> -->
+
+
+  <!-- Carousel Arrows -->
+  <div class="flex justify-between items-center mb-6">
+      <button class="hidden md:block p-2 border rounded-full hover:bg-gray-100">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+      </button>
+
+      <!-- Testimonials Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-[15px] md:px-8">
+          <!-- Card -->
+          <div class="border border-gray-300 rounded p-5 shadow">
+              <div class="flex justify-between items-center mb-4">
+                  <div class="text-yellow-400 text-sm">★ ★ ★ ★ ★</div>
+                  <p class="text-sm text-gray-600">04/29/2025</p>
+              </div>
+              <p class="text-lg font-semibold mb-2">Smartwatch Enthusiast</p>
+              <p class="text-gray-500 text-sm mb-6">"The Titan X3 Smartwatch exceeded all my expectations! As a
+                  fitness trainer, I rely on accurate metrics, and its heart rate monitor is spot-on compared to
+                  medical-grade devices. The 10-day battery life is unreal – I charge it twice a month!"</p>
+              <div class="border-t border-gray-200 mt-4"></div>
+              <div class="flex items-center gap-3 mt-4">
+                  <div class="w-6 h-6 rounded-full bg-gray-300 overflow-hidden">
+                      <img src="https://static.vecteezy.com/system/resources/previews/041/642/170/non_2x/ai-generated-portrait-of-handsome-smiling-young-man-with-folded-arms-isolated-free-png.png"
+                          alt="Avatar" />
+                  </div>
+                  <p class="text-sm font-bold">Michael R. Henderson</p>
+              </div>
+          </div>
+
+          <!-- Repeat 3 more cards with different content -->
+
+          <div class="border border-gray-300 rounded p-5 shadow">
+              <div class="flex justify-between items-center mb-4">
+                  <div class="text-yellow-400 text-sm">★ ★ ★ ★ ★</div>
+                  <p class="text-sm text-gray-600">04/29/2025</p>
+              </div>
+              <p class="text-lg font-semibold mb-2">Work-From-Home Parent</p>
+              <p class="text-gray-500 text-sm mb-6">"These Vortex Pro Noise-Canceling Earbuds saved my sanity.
+                  Between
+                  Zoom meetings and my toddler’s playtime, the adaptive noise cancellation is magic. The 3D audio
+                  makes movies feel like a theater. Worth every cent!"</p>
+              <div class="border-t border-gray-200 mt-4"></div>
+              <div class="flex items-center gap-3 mt-4">
+                  <div class="w-6 h-6 rounded-full bg-gray-300 overflow-hidden">
+                      <img src="https://static.vecteezy.com/system/resources/previews/041/642/170/non_2x/ai-generated-portrait-of-handsome-smiling-young-man-with-folded-arms-isolated-free-png.png"
+                          alt="Avatar" />
+                  </div>
+                  <p class="text-sm font-bold">Sarah K. Lin</p>
+              </div>
+          </div>
+
+          <div class="border border-gray-300 rounded p-5 shadow">
+              <div class="flex justify-between items-center mb-4">
+                  <div class="text-yellow-400 text-sm">★ ★ ★ ★ ★</div>
+                  <p class="text-sm text-gray-600">04/29/2025</p>
+              </div>
+              <p class="text-lg font-semibold mb-2">Travel Photographer</p>
+              <p class="text-gray-500 text-sm mb-6">"I’ve tested dozens of portable chargers, and the VoltGo 20k
+                  is
+                  the only one that keeps up with my DSLR and iPhone all day. Survived a sandstorm in Morocco and
+                  still had 30% left. Legendary durability."</p>
+              <div class="border-t border-gray-200 mt-4"></div>
+              <div class="flex items-center gap-3 mt-4">
+                  <div class="w-6 h-6 rounded-full bg-gray-300 overflow-hidden">
+                      <img src="https://static.vecteezy.com/system/resources/previews/041/642/170/non_2x/ai-generated-portrait-of-handsome-smiling-young-man-with-folded-arms-isolated-free-png.png"
+                          alt="Avatar" />
+                  </div>
+                  <p class="text-sm font-bold">Diego M. Alvarez</p>
+              </div>
+          </div>
+
+          <div class="border border-gray-300 rounded p-5 shadow">
+              <div class="flex justify-between items-center mb-4">
+                  <div class="text-yellow-400 text-sm">★ ★ ★ ★ ★</div>
+                  <p class="text-sm text-gray-600">04/29/2025</p>
+              </div>
+              <p class="text-lg font-semibold mb-2">Gaming & Tech Reviewer</p>
+              <p class="text-gray-500 text-sm mb-6">"The NeoBlade RGB Gaming Keyboard isn’t just hype — the
+                  mechanical
+                  switches are buttery smooth, and the anti-ghosting let me dominate in Valorant. My subscribers
+                  loved
+                  my demo video, and 5 bought it the same day!"</p>
+              <div class="border-t border-gray-200 mt-4"></div>
+              <div class="flex items-center gap-3 mt-4">
+                  <div class="w-6 h-6 rounded-full bg-gray-300 overflow-hidden">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9RERaibdvKGvsMJwrFJBTQNGfLCJFchs2L7OlX52od9zdaVIJgPr93XJlmIY38Qplupk&usqp=CAU"
+                          alt="Avatar" />
+                  </div>
+                  <p class="text-sm font-bold">Ethan T.</p>
+              </div>
+          </div>
+      </div>
+
+      <button class="hidden md:block p-2 border rounded-full hover:bg-gray-100">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+      </button>
+  </div>
+</div>
+
+<footer class="w-full p-[16px] md:p-[100px] text-sm bg-[#322D29] text-white">
+  <div class="mx-auto grid md:grid-cols-5 gap-8">
+
+      <!-- Logo & Icons -->
+      <div>
+          <h1 class="text-2xl font-bold mb-4">LOGO</h1>
+          <div class="flex space-x-4 items-center">
+              <a href="https://maps.google.com" target="_blank" aria-label="Location">
+                  <img src="https://img.icons8.com/ios-filled/24/ffffff/marker.png" alt="Location"
+                      class="w-6 h-6 hover:opacity-75">
+              </a>
+              <a href="tel:+1234567890" aria-label="Phone">
+                  <img src="https://img.icons8.com/ios-filled/24/ffffff/phone.png" alt="Phone"
+                      class="w-6 h-6 hover:opacity-75">
+              </a>
+              <a href="mailto:support@example.com" aria-label="Email">
+                  <img src="https://img.icons8.com/ios-filled/24/ffffff/email.png" alt="Email"
+                      class="w-6 h-6 hover:opacity-75">
+              </a>
+              <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp">
+                  <img src="https://img.icons8.com/ios-filled/24/ffffff/whatsapp.png" alt="WhatsApp"
+                      class="w-6 h-6 hover:opacity-75">
+              </a>
+          </div>
+
+      </div>
+
+      <!-- Company Links -->
+      <div>
+          <h2 class="font-semibold mb-4">Company</h2>
+          <ul class="space-y-2">
+              <li>About Us</li>
+              <li>Delivery Information</li>
+              <li>Privacy Policy</li>
+              <li>Terms & Conditions</li>
+              <li>Contact Us</li>
+              <li>Support Center</li>
+              <li>Careers</li>
+          </ul>
+      </div>
+
+      <!-- Account Links -->
+      <div>
+          <h2 class="font-semibold mb-4">Account</h2>
+          <ul class="space-y-2">
+              <li>Sign In</li>
+              <li>View Cart</li>
+              <li>My Wishlist</li>
+              <li>Track My Order</li>
+              <li>Help Ticket</li>
+              <li>Shipping Details</li>
+              <li>Compare products</li>
+          </ul>
+      </div>
+
+      <!-- Corporate Links -->
+      <div>
+          <h2 class="font-semibold mb-4">Corporate</h2>
+          <ul class="space-y-2">
+              <li>Become a Vendor</li>
+              <li>Affiliate Program</li>
+              <li>Farm Business</li>
+              <li>Farm Careers</li>
+              <li>Our Suppliers</li>
+              <li>Accessibility</li>
+              <li>Promotions</li>
+          </ul>
+      </div>
+
+      <!-- App Install and Newsletter -->
+      <div>
+          <h2 class="font-semibold mb-4">Install App</h2>
+          <div class="flex space-x-2 mb-4">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa"
+                  class="h-6 bg-white p-1">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard"
+                  class="h-6 bg-white p-1">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/American_Express_logo_%282018%29.svg"
+                  alt="Amex" class="h-6 bg-white p-1">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="Paypal"
+                  class="h-6 bg-white p-1">
+          </div>
+          <p class="mb-4 text-xs">Secured Payment Gateways</p>
+
+          <h2 class="font-semibold mb-2">News letter</h2>
+          <div class="flex border border-gray-400 rounded overflow-hidden">
+              <input type="email" placeholder="Enter your email address"
+                  class="bg-transparent px-3 py-2 w-full outline-none">
+              <button class="bg-gray-700 px-4">→</button>
+          </div>
+      </div>
+  </div>
+
+  <hr class="my-8 border-gray-700" />
+
+  <div
+      class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-xs space-y-4 md:space-y-0">
+      <div>
+          © 2024, Shopify - HTML Ecommerce Template<br>
+          All rights reserved
+      </div>
+
+      <div class="flex-cols">
+          <div class="flex items-center space-x-4">
+              <div class="flex items-center space-x-4">
+                  <span>Follow Us</span>
+                  <div class="flex space-x-3">
+                      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                          <img src="https://img.icons8.com/ios-filled/24/ffffff/facebook-new.png" alt="Facebook"
+                              class="w-6 h-6 hover:opacity-75">
+                      </a>
+                      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                          <img src="https://img.icons8.com/ios-filled/24/ffffff/twitter.png" alt="Twitter"
+                              class="w-6 h-6 hover:opacity-75">
+                      </a>
+                      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                          <img src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new.png" alt="Instagram"
+                              class="w-6 h-6 hover:opacity-75">
+                      </a>
+                      <a href="https://pinterest.com" target="_blank" aria-label="Pinterest">
+                          <img src="https://img.icons8.com/ios-filled/24/ffffff/pinterest--v1.png" alt="Pinterest"
+                              class="w-6 h-6 hover:opacity-75">
+                      </a>
+                      <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+                          <img src="https://img.icons8.com/ios-filled/24/ffffff/youtube-play.png" alt="YouTube"
+                              class="w-6 h-6 hover:opacity-75">
+                      </a>
+                  </div>
+              </div>
+
+          </div>
+
+          <p class="py-2">
+              Up to 15% discount on your first subscribe
+          </p>
+      </div>
+  </div>
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+   
+
+   
+
+</body>
+
+</html>
